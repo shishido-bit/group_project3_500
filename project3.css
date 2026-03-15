@@ -1,0 +1,306 @@
+/* 
+————Color Codes for Website———
+
+Deep Blue: #0D1321
+Dark Blue: #1D2D44
+Medium Blue: #3E5C76
+Light Blue: #748CAB
+Tan: #F0EBD8
+*/
+
+/* 
+————Fonts to Use————
+Georgia for headings and titles)
+Verdana for paragraphs and main text
+Backup Fonts: Arial, Sans-Serif
+*/
+
+/*————GLOBAL DESIGN————*/
+* {
+  box-sizing: border-box;
+}
+
+/*————END OF GLOBAL DESIGN————*/
+
+header {
+  background-color: #0D1321;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: Georgia, Arial, Sans-Serif;
+	font-weight: 100;
+}
+
+/*————NAVIGATOIN BAR DESIGN————*/
+
+
+
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1D2D44;
+  Font-family: Georgia, Arial, Sans-Serif;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  baclground-color: #1D2D44;
+}
+
+ul.topnav li a:hover {
+  background-color: #748CAB;
+  color: white;
+}
+
+#welcome {
+	background-color: #748CAB;
+	color: white;
+}
+#aboutme {
+	background-color: #748CAB;
+	color: white;
+}
+#resources {
+	background-color: #748CAB;
+	color: white;
+}
+#techheros {
+	background-color: #748CAB;
+	color: white;
+	float: right;
+}
+#machinelearning {
+	background-color: #748CAB;
+	color: white;
+	float: right;
+}
+
+/*————END OF NAVIGATION BAR DESIGN————*/
+
+/*————INSIDE PAGE NAVIGATION BAR | To create this, I used W3School's tutorial on fixed sidebars: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+.sidebar {
+	width: 175px;
+	position: fixed;
+	z-index: 1;
+	top: 186px;
+	left: 0;
+	background-color: #1D2D44;
+	overflow-x: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.sidebar a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	font-family: Georgia, Arial, Sans-Serif;
+	font-size: 1rem;
+	display: block;
+	
+}
+
+.sidebar a:hover {
+	color: white;
+	background-color: #748CAB;
+}
+
+
+
+
+/*————BODY DESIGN————*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0EBD8;
+  Font-family: Verdana, Arial, Sans-Serif;
+}
+
+section {
+	margin: 30px
+}
+.video {
+	margin: auto;
+	display: flex;
+	width: 640px;
+	height: 480px;
+}
+
+/*————Container for the introduction sections————*/
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/*————Rounded biography boxes with dark gray border————*/
+.intro-box {
+  flex: 1;
+  min-width: 400px;
+  background-color: #ffffff;
+  
+  /*————Border settings: 2px thickness, solid line, dark gray color————*/
+  border: 2px solid #555555; 
+  
+  /*————Rounding the corners (15px gives a modern, soft look)————*/
+  border-radius: 15px; 
+  
+  padding: 30px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/*————Heading for the names————*/
+.intro-box h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #333333;
+  border-bottom: 1px solid #cccccc; /* Subtle line under the name */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/*————PROFILE PICTURES————*/
+
+.intro-box h2 #jkp {
+	width: 350px;
+	border-radius: 50%;
+	display: block;
+	margin: 0px auto 25px;
+	font-family: Georgia, Arial, Sans-Serif;
+}
+.intro-box h2 #ms {
+	width: 350px;
+	border-radius: 50%;
+	display: block;
+	margin: 0px auto 25px;
+	font-family: Georgia, Arial, Sans-Serif;
+}
+
+/*————Biography text————*/
+.intro-box p {
+  line-height: 1.7;
+  color: #444444;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+/*————Container for the Resource list————*/
+.resource-container {
+  max-width: 800px;
+  margin-left: 200px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  background-color: #ffffff;
+  border: 2px solid #555555;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px; 
+  color: #444444;
+}
+
+/*————ndividual list items————*/
+.resource-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  background-color: #ffffff;
+  border: 2px solid #555555; 
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;       
+  color: #444444;
+}
+
+.sub-list {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.sub-list li {
+  border: none;      
+  background: none;  
+  padding: 5px 0;
+  margin: 0;
+}
+/*————Welcome Page Layout (Stacked)————*/
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.columnleft {
+    margin-bottom: 20px;
+}
+
+.columnleft h3 {
+    color: #0D1321;
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.columnright h4 {
+    /* Yellow marker highlight effect */
+    background: linear-gradient(transparent 60%, #FFF176 60%); 
+    display: inline-block;      
+    padding: 0 5px;       
+    color: #1D2D44;       
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.columnright p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.testv {
+	text-align: center;
+}
+#introductions {
+	text-align: center;
+}
+/*————END OF BODY DESIGN————*/
+
+/*————FOOTER DESIGN————*/
+
+footer {
+    background-color: #0D1321;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 50px;
+	clear: both;
+}
+.email {
+	color: white;
+}
+
+/*————END OF FOOTER DESIGN————*/
